@@ -14,9 +14,11 @@
 				<ul>
 					<li>
 						<h3 id="q1">Question 1</h3>
-						<div class="q-content">
-							<pre>
-								<code class="language-javascript">
+						<button type="button" class="collapsible">Show Code</button>
+						<div class="content">
+							<div class="q-content">
+								<pre>
+									<code class="language-javascript">
 <?php
 	//correct JavaScript file
 	$f = "js/ms1/q1.js";
@@ -31,27 +33,30 @@
 		$q = file_get_contents($f);
 		
 		//base64 encode question
-		$b = base64_encode($q);
+		$b = base64_encode($f);
 		
 		//echo question
 		echo $q;
 	}
 ?>
-								</code>
-							</pre>
-							<p>
+									</code>
+								</pre>
+							</div>
+						</div>
+						<p>
 <?php
 	//echo test link
 	echo "<a href=\"doRender.php?q=1&s=" . $b . "\">Test Code</a>";
 ?>
-							</p>
-						</div>
+						</p>
 					</li>
 					<li>
 						<h3 id="q2">Question 2</h3>
-						<div class="q-content">
-							<pre>
-								<code class="language-javascript">
+						<button type="button" class="collapsible">Show Code</button>
+						<div class="content">
+							<div class="q-content">
+								<pre>
+									<code class="language-javascript">
 <?php
 	//correct JavaScript file
 	$f = "js/ms1/q2.js";
@@ -63,27 +68,30 @@
 		$q = file_get_contents($f);
 		
 		//base64 encode question
-		$b = base64_encode($q);
+		$b = base64_encode($f);
 		
 		//echo question
 		echo $q;
 	}
 ?>
-								</code>
-							</pre>
-							<p>
+									</code>
+								</pre>
+							</div>
+						</div>
+						<p>
 <?php
 	//echo test link
 	echo "<a href=\"doRender.php?q=2&s=" . $b . "\">Test Code</a>";
 ?>
-							</p>
-						</div>
+						</p>
 					</li>
 					<li>
 						<h3 id="q3">Question 3</h3>
-						<div class="q-content">
-							<pre>
-								<code class="language-javascript">
+						<button type="button" class="collapsible">Show Code</button>
+						<div class="content">
+							<div class="q-content">
+								<pre>
+									<code class="language-javascript">
 <?php
 	//correct JavaScript file
 	$f = "js/ms1/q3.js";
@@ -95,27 +103,30 @@
 		$q = file_get_contents($f);
 		
 		//base64 encode question
-		$b = base64_encode($q);
+		$b = base64_encode($f);
 		
 		//echo question
 		echo $q;
 	}
 ?>
-								</code>
-							</pre>
-							<p>
+									</code>
+								</pre>
+							</div>	
+						</div>
+						<p>
 <?php
 	//echo test link
 	echo "<a href=\"doRender.php?q=3&s=" . $b . "\">Test Code</a>";
 ?>
-							</p>
-						</div>
+						</p>
 					</li>
 					<li>
 						<h3 id="q4">Question 4</h3>
-						<div class="q-content">
-							<pre>
-								<code class="language-javascript">
+						<button type="button" class="collapsible">Show Code</button>
+						<div class="content">
+							<div class="q-content">
+								<pre>
+									<code class="language-javascript">
 <?php
 	//correct JavaScript file
 	$f = "js/ms1/q4.js";
@@ -127,26 +138,28 @@
 		$q = file_get_contents($f);
 		
 		//base64 encode question
-		$b = base64_encode($q);
+		$b = base64_encode($f);
 		
 		//echo question
 		echo $q;
 	}
 ?>
-								</code>
-							</pre>
-							<p>
+									</code>
+								</pre>
+							</div>
+						</div>
+						<p>
 <?php
 	//echo test link
 	echo "<a href=\"doRender.php?q=4&s=" . $b . "\">Test Code</a>";
 ?>
-							</p>
-						</div>
+						</p>
 					</li>
 				</ul>
 			</div>
 			<p><a href="index.php">Back to listing</a></p>
 			<script type="text/javascript">hljs.highlightAll();</script>
+			<script type="text/javascript" src="js/util.js"></script>
 		</div>
 	</body>
 </html>
