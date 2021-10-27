@@ -5,7 +5,7 @@ var sceneFile = [];
 function preload() {
 
     //load the scene file into an array of lines
-    sceneFile = loadStrings("scene.txt");
+    sceneFile = loadStrings("engine/scene.txt");
 }
 
 function setup() { 
