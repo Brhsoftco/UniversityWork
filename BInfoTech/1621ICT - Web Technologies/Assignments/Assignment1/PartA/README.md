@@ -1,0 +1,2 @@
+# Redacted
+This folder once contained course materials and completed assignment content, however due to copyright and academic liability concerns, they have been redacted. If you are enrolled in this course, you can access these materials via Learning@Griffith.\

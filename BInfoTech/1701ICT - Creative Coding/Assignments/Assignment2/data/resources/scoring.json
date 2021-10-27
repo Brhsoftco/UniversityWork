@@ -1,0 +1,14 @@
+{
+    "scoringSchema": {
+        "version": "1.0.0",
+        "scoringData": {
+            "highscores": [
+                {
+                    "playerName": "JClarkson",
+                    "score": 160258
+                }
+            ],
+            "recents": []
+        }
+    }
+}

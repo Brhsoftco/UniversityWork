@@ -1,0 +1,128 @@
+form {
+    margin: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-label {
+    font-weight: bold;
+}
+.content {
+    margin: 20px;
+    text-align: left;
+}
+.container {
+    margin: 5px;
+    text-align: center;
+}
+.menu-bar {
+    background-color: #CCC;
+    border-radius: 10px;
+}
+.menu-list-activator {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.menu-list-activator a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.menu-list {
+    position: relative;
+    display: inline-block;
+}
+.menu-list-content {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-list-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu-list-content a:hover {
+    background-color: #2ecc71;
+}
+.wrapper {
+    min-height: 100%;
+}
+.page-header {
+    background-color: #FFF;
+    color: #222;
+}
+.page-footer {
+    background-color: #CCC;
+    color: #222;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    left: 0;
+    bottom: 0;
+    margin: 10px 10px 0px 10px;
+    width: calc(100% - 40px);
+}
+.animalmenu {
+    display: flex;
+}
+.animalmenu-sub {
+    flex: 1;
+}
+.animalmenu-sub img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 20px;
+}
+#page {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    padding: 10px;
+ }
+ .column {
+    flex: 50%;
+    padding: 10px;
+ }
+ .column img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 20px;
+ }
+ table, td, th {
+     border: 1px solid black;
+     width: 100%;
+     padding: 2px;
+ }
+/* Medium */
+@media screen and (min-width: 40em) {
+    #page {
+        max-width: 50em;
+    }
+}
+
+/* Large
+ */
+@media screen and (min-width: 64em) {
+    #page {
+        max-width: 75em;
+    }
+}
