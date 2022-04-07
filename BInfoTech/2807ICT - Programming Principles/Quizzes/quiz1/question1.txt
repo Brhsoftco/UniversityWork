@@ -1,0 +1,10 @@
+Write a program that takes as input the radius of a large circle and the radius of a small circle. Calculate the difference between the areas of these two circles.
+(Let Pi = 3.14)
+
+Example:
+
+Radius of the large circle: 10
+
+Radius of the small circle: 5
+
+Difference between their areas: 235.5

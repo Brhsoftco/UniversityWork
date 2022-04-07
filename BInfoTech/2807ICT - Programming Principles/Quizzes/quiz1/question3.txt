@@ -1,0 +1,11 @@
+Input four integers a, b, c, and d.  Print True if the difference between one pair of integers is larger than or equal to 10, and at least one of the four integers is less than 10. Otherwise, print False.
+
+Example:
+
+a: 10
+b: 10
+c: 8
+d: 40
+Output: True
+
+For the toolbar, press ALT+F10 (PC) or ALT+FN+F10 (Mac).

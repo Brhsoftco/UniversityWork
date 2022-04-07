@@ -1,0 +1,11 @@
+Qantas Frequent Flyer membership has five tiers: Bronze, Silver, Gold, Platinum and Platinum One. The status credits required to reach these tiers are 0, 300, 700, 1400 and 3600, respectively. Write a program that reads status credits and outputs the corresponding tier together with how many more status credits are needed to reach the next higher tier. If the current tier is Platinum One, the status credit required to reach a higher tier is 0.
+
+Example:
+
+Status credits: 100
+
+Your membership tier is: Bronze
+
+Status credits needed to reach the next tier: 200
+
+For the toolbar, press ALT+F10 (PC) or ALT+FN+F10 (Mac).
