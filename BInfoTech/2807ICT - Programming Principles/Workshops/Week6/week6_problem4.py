@@ -71,7 +71,7 @@ if len(data) == numberOfStudents:
         dConverted = [int(n) for n in d]
         
         # calculate student average
-        s = sum(dConverted) / numberOfStudents
+        s = sum(dConverted) / numberOfCourses
         
         # append student average
         studentAverages.append(s)
@@ -89,7 +89,7 @@ if len(data) == numberOfStudents:
             courseTotal += int(d[c])
             
         # calculate average
-        a = courseTotal / numberOfCourses
+        a = courseTotal / numberOfStudents
         
         # append course average
         coursesAverages.append(a)
