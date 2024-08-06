@@ -38,7 +38,9 @@ if t.isnumeric():
     else:
     
         a = 3.2 * np.power(t, 2)
-        
+    
+    a = a / t
+    
     #output result
     print_info("CALCULATED RESULT:")
     print(a)
