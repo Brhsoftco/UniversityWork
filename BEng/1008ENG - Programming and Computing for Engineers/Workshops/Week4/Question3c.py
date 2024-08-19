@@ -1,21 +1,5 @@
-import math
 import numpy as np
 import matplotlib.pyplot as plt
-from colorama import Fore, Back, Style
-
-#just helps separate results better
-def print_info(msg, append = "", brk = True):
-
-    if (brk):
-        print("")
-    print(Back.BLUE + str(msg) + str(append) + Back.BLACK)
-    
-#assists with highlighting error messages
-def print_error(msg, append = "", brk = True):
-
-    if (brk):
-        print("")
-    print(Back.RED + str(msg) + str(append) + Back.BLACK)
 
 #UNIVERSAL KNOWN VALUES
 xU = [0, 10]

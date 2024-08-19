@@ -1,11 +1,8 @@
-import math
+import importlib as lib
 import numpy as np
-from colorama import Fore, Back, Style
 
-#just helps separate results better
-def print_info(msg):
-
-    print(Back.BLUE + msg + Back.BLACK)
+#process requirements located in different files
+clib = lib.import_module("lib.Console")
 
 #extracts the first row that matches
 #the given value and column index (default 0)
@@ -49,8 +46,8 @@ consumptionTime = [
     [ 17 ],
     [ 18 ]
 ]
-print_info("")
-print_info("~ ARRAY A~ ")
+clib.print_break()
+clib.print_info("~ ARRAY A~ ")
 print(consumptionTime)
 
 #array "B"
@@ -68,38 +65,38 @@ consumptionFigs = [
     [ 12, 20,  11  ],
     [ 4,  7,   2   ]
 ]
-print_info("")
-print_info("~ ARRAY B ~ ")
+clib.print_break()
+clib.print_info("~ ARRAY B ~ ")
 print(consumptionFigs)
 
 #combine consumption arrays; appending the figures
 #to the end of the times
 #array "C"
 consumptionComb = np.append(consumptionTime, consumptionFigs, axis=1)
-print_info("")
-print_info("~ ARRAY C ~ ")
+clib.print_break()
+clib.print_info("~ ARRAY C ~ ")
 print(consumptionComb)
 
 #extract hour 14; enable ommission (removes 14 from the array)
 #array "D"
 consumptionD    = extract_row_val(consumptionComb, 14, 0, True)
 consumptionDSum = np.sum(consumptionD)
-print_info("")
-print_info("~ ARRAY D ~ ")
+clib.print_break()
+clib.print_info("~ ARRAY D ~ ")
 print(consumptionD)
-print_info("~ ARRAY D SUM ~ ")
+clib.print_info("~ ARRAY D SUM ~ ")
 print(consumptionDSum)
 
 #extract all data for floor 3
 #array "E"
 consumptionFL3  = consumptionComb[:, 3]
-print_info("")
-print_info("~ ARRAY E ~ ")
+clib.print_break()
+clib.print_info("~ ARRAY E ~ ")
 print(consumptionFL3)
 
 #extract all afternoon data (from 12 to 18)
 #array "F"
 consumptionAFT  = extract_row_range(consumptionComb, 12, 18)
-print_info("")
-print_info("~ ARRAY F ~ ")
+clib.print_break()
+clib.print_info("~ ARRAY F ~ ")
 print(consumptionAFT)

@@ -1,23 +1,11 @@
-import math
+import importlib as lib
 import numpy as np
-from colorama import Fore, Back, Style
 
-#just helps separate results better
-def print_info(msg, append = "", brk = True):
-
-    if (brk):
-        print("")
-    print(Back.BLUE + str(msg) + str(append) + Back.BLACK)
-    
-#assists with highlighting error messages
-def print_error(msg, append = "", brk = True):
-
-    if (brk):
-        print("")
-    print(Back.RED + str(msg) + str(append) + Back.BLACK)
+#process requirements located in different files
+clib = lib.import_module("lib.Console")
 
 #get user input for scalar
-print_info("ENTER SCALAR: ")
+clib.print_info("ENTER SCALAR: ")
 t = input()
 
 #proceed with validation
@@ -42,10 +30,10 @@ if t.isnumeric():
     a = a / t
     
     #output result
-    print_info("CALCULATED RESULT:")
+    clib.print_info("CALCULATED RESULT:")
     print(a)
     
 else:
 
     #communicate issue
-    print_error("Invalid scalar value")
+    clib.print_error("Invalid scalar value")
