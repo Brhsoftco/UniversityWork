@@ -84,3 +84,7 @@ def is_valid_int(val):
         return True
     except ValueError:
         return False
+                
+#formats a number by its English ordinal suffix
+def ordinal(n):
+    return str(n)+("th" if 4<=n%100<=20 else {1:"st",2:"nd",3:"rd"}.get(n%10, "th"))
